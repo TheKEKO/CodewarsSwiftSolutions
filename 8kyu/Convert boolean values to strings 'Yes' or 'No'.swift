@@ -17,3 +17,8 @@ func boolToWord(_ bool: Bool) -> String {
     case false: return "No"
     }
 }
+
+// Solution 3
+func boolToWord(_ bool: Bool) -> String {
+    bool ? "Yes" : "No"
+}
