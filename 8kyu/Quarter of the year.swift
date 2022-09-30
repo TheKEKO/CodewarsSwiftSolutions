@@ -5,9 +5,9 @@
 
  For example: month 2 (February), is part of the first quarter; 
  month 6 (June), is part of the second quarter; 
- and month 11 (November), is part of the fourth quarter. */
+ and month 11 (November), is part of the fourth quarter.
 
-/* Задав месяц как целое число от 1 до 12, верните, к какому кварталу года он
+ Задав месяц как целое число от 1 до 12, верните, к какому кварталу года он
  относится как целое число.
  
  Например: месяц 2 (февраль) относится к первому кварталу; 
