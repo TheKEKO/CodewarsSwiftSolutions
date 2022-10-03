@@ -6,7 +6,15 @@ func isDivisible(_ n: Int, _ x: Int, _ y: Int) -> Bool {
 }
 
 // Solution 1
-
 func isDivisible(_ n: Int, _ x: Int, _ y: Int) -> Bool {
  return n % x == 0 && n % y == 0
+}
+
+// Solution 2
+func isDivisible(_ n: Int, _ x: Int, _ y: Int) -> Bool {
+    if n % x == 0 && n % y == 0 {
+        return true
+    } else {
+        return false
+    }
 }
