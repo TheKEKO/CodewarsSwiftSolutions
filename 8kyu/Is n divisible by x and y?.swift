@@ -5,4 +5,8 @@ func isDivisible(_ n: Int, _ x: Int, _ y: Int) -> Bool {
     // your code here
 }
 
-// Solution
+// Solution 1
+
+func isDivisible(_ n: Int, _ x: Int, _ y: Int) -> Bool {
+ return n % x == 0 && n % y == 0
+}
