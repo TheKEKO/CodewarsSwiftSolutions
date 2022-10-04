@@ -14,4 +14,17 @@ import Foundation
 func squareOrSquareRoot(_ input: [Int]) -> [Int] {
 }
 
-// Solution 
+// Solution
+func squareOrSquareRoot(_ input: [Int]) -> [Int] {
+    var result = [Int]()
+    
+    for item in input {
+        var square = Double(item).squareRoot()
+        if floor(square) == square {
+            result.append(Int(square))
+        } else {
+            result.append(item * item)
+        }
+    }
+    return result
+}
