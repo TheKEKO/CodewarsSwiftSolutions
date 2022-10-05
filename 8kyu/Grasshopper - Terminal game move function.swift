@@ -16,3 +16,8 @@ func move(_ p: Int, _ r: Int) -> Int {
 func move(_ p: Int, _ r: Int) -> Int {
     return p + r * 2
 }
+
+// Solution 2
+func move(_ p: Int, _ r: Int) -> Int {
+    p + r + r
+}
