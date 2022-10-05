@@ -12,7 +12,7 @@ func move(_ p: Int, _ r: Int) -> Int {
     // your code here
 }
 
-// Solution
+// Solution 1
 func move(_ p: Int, _ r: Int) -> Int {
     return p + r * 2
 }
