@@ -16,3 +16,7 @@ func simpleMultiplication(_ num: Int) -> Int {
     }
 }
 
+// Solution 2
+func simpleMultiplication(_ num: Int) -> Int {
+    return num * (num % 2 == 0 ? 8 : 9)
+}
