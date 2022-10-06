@@ -9,7 +9,7 @@ func getGrade(_ s1: Int, _ s2: Int, _ s3: Int) -> String {
 
 // Solution
 func getGrade(_ s1: Int, _ s2: Int, _ s3: Int) -> String {
-    var result = (s1 + s2 + s3) / 3
+    let result = (s1 + s2 + s3) / 3
     switch result {
     case 60..<70: return "D"
     case 70..<80: return "C"
