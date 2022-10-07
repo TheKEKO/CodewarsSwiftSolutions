@@ -20,3 +20,6 @@ func great(_ name: String, _ owner: String) -> String {
 func great(_ name: String, _ owner: String) -> String {
   return "Hello \(name == owner ? "boss" : "guest")"
 }
+
+// Solution 3
+let great: (String,String) -> String = { $0 == $1 ? "Hello boss" : "Hello guest"}
