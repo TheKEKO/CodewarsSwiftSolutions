@@ -7,11 +7,16 @@ func great(_ name: String, _ owner: String) -> String {
   // complete this function
 }
 
-// Solution
+// Solution 1
 func great(_ name: String, _ owner: String) -> String {
     if name == owner {
-        return "Hello boss'"
+        return "Hello boss"
     } else {
         return "Hello guest"
     }
+}
+
+// Solution 2
+func great(_ name: String, _ owner: String) -> String {
+  return "Hello \(name == owner ? "boss" : "guest")"
 }
