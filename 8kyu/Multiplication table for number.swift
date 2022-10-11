@@ -8,3 +8,15 @@ func multi_table(_ number: Int) -> String {
 }
 
 // Solution
+func multi_table(_ number: Int) -> String {
+    var result = ""
+    var sum = 0
+    
+    for item in 1...10 {
+        sum = item * number
+        result.append("\(item) * \(number) = \(sum)\n")
+    }
+    result.removeLast()
+    
+    return result
+}
