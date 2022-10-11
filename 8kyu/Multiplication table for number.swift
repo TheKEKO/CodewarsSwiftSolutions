@@ -6,3 +6,5 @@
 func multi_table(_ number: Int) -> String {
     return ""
 }
+
+// Solution
