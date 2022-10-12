@@ -12,11 +12,16 @@ func check<T: Equatable>(_ a: [T], _ x: T) -> Bool {
     // Your code here
 }
 
-// Solution
+// Solution 1
 func check<T: Equatable>(_ a: [T], _ x: T) -> Bool {
     if a.contains(x) {
         return true
     } else {
         return false
     }
+}
+
+// Solution 2
+func check<T: Equatable>(_ a: [T], _ x: T) -> Bool {
+    return a.contains(x)
 }
