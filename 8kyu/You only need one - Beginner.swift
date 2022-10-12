@@ -25,3 +25,11 @@ func check<T: Equatable>(_ a: [T], _ x: T) -> Bool {
 func check<T: Equatable>(_ a: [T], _ x: T) -> Bool {
     return a.contains(x)
 }
+
+// Solution 3
+func check<T: Equatable>(_ a: [T], _ x: T) -> Bool {
+    for i in a {
+        if x == i { return true}
+    }
+    return false
+}
