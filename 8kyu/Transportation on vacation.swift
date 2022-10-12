@@ -18,7 +18,7 @@ func RentalCarCost(_ days: Int) -> Int {
 
 }
 
-// Solution
+// Solution 1
 func RentalCarCost(_ days: Int) -> Int {
     switch days {
     case 1..<3: return days * 40
@@ -26,4 +26,11 @@ func RentalCarCost(_ days: Int) -> Int {
     default:
         return (days * 40) - 50
     }
+}
+
+// Solution 2
+func RentalCarCost(_ days: Int) -> Int {
+    let cost = days * 40
+    var discount = days >= 7 ? 50 : 20
+    return days >= 3 ? cost - discount : cost
 }
