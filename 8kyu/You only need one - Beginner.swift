@@ -11,3 +11,12 @@ Return true if the array contains the value, false if not.
 func check<T: Equatable>(_ a: [T], _ x: T) -> Bool {
     // Your code here
 }
+
+// Solution
+func check<T: Equatable>(_ a: [T], _ x: T) -> Bool {
+    if a.contains(x) {
+        return true
+    } else {
+        return false
+    }
+}
