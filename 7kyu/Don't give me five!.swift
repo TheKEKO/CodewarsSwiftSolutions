@@ -10,3 +10,16 @@ The start and the end number are both inclusive!
 
 func dontGiveMeFive(_ start: Int, _ end: Int) -> Int {
 }
+
+// Solution 1
+func dontGiveMeFive(_ start: Int, _ end: Int) -> Int {
+    var numbersCount = 0
+    
+    for number in start...end {
+        if String(number).contains("5") != true {
+            numbersCount += 1
+        }
+    }
+    
+    return numbersCount
+}
