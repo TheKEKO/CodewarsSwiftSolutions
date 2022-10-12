@@ -8,3 +8,6 @@ Return true if the array contains the value, false if not.
 Тип a и x может быть String или Int.
 Верните true, если массив содержит значение, false - если нет. */
 
+func check<T: Equatable>(_ a: [T], _ x: T) -> Bool {
+    // Your code here
+}
