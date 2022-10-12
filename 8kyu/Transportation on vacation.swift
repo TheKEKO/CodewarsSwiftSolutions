@@ -17,3 +17,13 @@ Write a code that gives out the total amount for different days(d).
 func RentalCarCost(_ days: Int) -> Int {
 
 }
+
+// Solution
+func RentalCarCost(_ days: Int) -> Int {
+    switch days {
+    case 1..<3: return days * 40
+    case 3..<7: return (days * 40) - 20
+    default:
+        return (days * 40) - 50
+    }
+}
