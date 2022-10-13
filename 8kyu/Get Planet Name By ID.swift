@@ -28,7 +28,7 @@ func getPlanetName(_ id: Int) -> String {
   }
 }
 
-// Solution 
+// Solution 1
 func getPlanetName(_ id: Int) -> String {
   switch id {
     case 1: return "Mercury"
@@ -41,4 +41,30 @@ func getPlanetName(_ id: Int) -> String {
     case 8: return "Neptune"
     default: return ""
   }
+}
+
+// Solution 2
+func getPlanetName(_ id: Int) -> String {
+  var name:String
+  switch id {
+    case 1: 
+      name = "Mercury"
+    case 2: 
+      name = "Venus"
+    case 3: 
+      name = "Earth"
+    case 4: 
+      name = "Mars"
+    case 5: 
+      name = "Jupiter"
+    case 6: 
+      name = "Saturn"
+    case 7: 
+      name = "Uranus"
+    case 8: 
+      name = "Neptune"
+    default:
+      name = ""
+  } 
+  return name
 }
