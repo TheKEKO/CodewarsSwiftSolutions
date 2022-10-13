@@ -13,3 +13,22 @@ Note: base is a non-negative number, factor is a positive number. */
 func checkForFactor(_ base: Int, _ factor: Int) -> Bool {
     return true
 }
+
+// Solution 1
+func checkForFactor(_ base: Int, _ factor: Int) -> Bool {
+    if base % factor == 0 {
+        return true
+    } else {
+        return false
+    }
+}
+
+// Solution 2
+func checkForFactor(_ base: Int, _ factor: Int) -> Bool {
+    return base % factor == 0
+}
+
+// Solution 3
+func checkForFactor(_ base: Int, _ factor: Int) -> Bool {
+    return base % factor == 0 ? true : false
+}
