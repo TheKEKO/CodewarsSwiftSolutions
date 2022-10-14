@@ -28,7 +28,7 @@ func solution(_ number:Int) -> String {
      (4, "IV"),
      (1, "I")]
     
-    var roman = ""
+    var result = ""
     var remainder = 0
     
     for entry in conversionTable {
@@ -42,23 +42,25 @@ func solution(_ number:Int) -> String {
 
 // Solution 2
 func solution(_ number:Int) -> String {
+    let conversionTable =
+    [(1000, "M"),
+     (900, "CM"),
+     (500, "D"),
+     (400, "CD"),
+     (100, "C"),
+     (90, "XC"),
+     (50, "L"),
+     (40, "XL"),
+     (10, "X"),
+     (9, "IX"),
+     (5, "V"),
+     (4, "IV"),
+     (1, "I")]
+    
     var n = number
     var result = ""
-    let romanNumerals = [( 1000,    "M"),
-                         (  900,   "CM"),
-                         (  500,    "D"),
-                         (  400,   "CD"),
-                         (  100,    "C"),
-                         (   90,   "XC"),
-                         (   50,    "L"),
-                         (   40,   "XL"),
-                         (   10,    "X"),
-                         (    9,   "IX"),
-                         (    5,    "V"),
-                         (    4,   "IV"),
-                         (    1,    "I")]
     
-    for (v, l) in romanNumerals {
+    for (v, l) in conversionTable {
         while n >= v {
             result += l
             n -= v
