@@ -57,13 +57,13 @@ func solution(_ number:Int) -> String {
      (4, "IV"),
      (1, "I")]
     
-    var n = number
+    var remainder = number
     var result = ""
     
     for (v, l) in conversionTable {
-        while n >= v {
+        while remainder >= v {
             result += l
-            n -= v
+            remainder -= v
         }
     }
     
