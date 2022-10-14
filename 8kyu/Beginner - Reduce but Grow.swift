@@ -15,3 +15,8 @@ func grow(_ arr: [Int]) -> Int {
     }
     return result
 }
+
+// Solution 2
+func grow(_ arr: [Int]) -> Int {
+    arr.reduce(1,*)
+}
