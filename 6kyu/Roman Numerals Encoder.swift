@@ -60,10 +60,10 @@ func solution(_ number:Int) -> String {
     var remainder = number
     var result = ""
     
-    for (v, l) in conversionTable {
-        while remainder >= v {
-            result += l
-            remainder -= v
+    for (key, value) in conversionTable {
+        while remainder >= key {
+            result += value
+            remainder -= key
         }
     }
     
