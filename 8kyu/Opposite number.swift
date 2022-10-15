@@ -14,3 +14,8 @@ func opposite(number: Double) -> Double {
         return number
     }
 }
+
+// Solution 2
+func opposite(number: Double) -> Double {
+    return -number
+}
