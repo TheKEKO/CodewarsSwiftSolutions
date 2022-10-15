@@ -5,3 +5,12 @@
 func opposite(number: Double) -> Double {
   # your solution here
 }
+
+// Solution 1
+func opposite(number: Double) -> Double {
+      if number == number {
+        return -number
+    } else {
+        return number
+    }
+}
