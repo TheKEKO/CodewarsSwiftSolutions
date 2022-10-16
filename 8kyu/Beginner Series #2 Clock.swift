@@ -13,3 +13,7 @@ func past(_ h: Int, _ m: Int, _ s: Int) -> Int {
     return (h * 3600 + m * 60 + s * 1) * 1000
 }
 
+// Solution 2
+func past(_ h: Int, _ m: Int, _ s: Int) -> Int {
+  return s * 1000 + m * 60000 + h * 3600000
+}
