@@ -5,3 +5,11 @@
 func digitize(_ num:Int) -> [Int] {
 
 }
+
+// Solution 
+func digitize(_ num:Int) -> [Int] {
+    let number = String(num)
+    var result = number.compactMap{ $0.wholeNumberValue }
+    result.reverse()
+    return result
+}
