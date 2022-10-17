@@ -6,10 +6,14 @@ func digitize(_ num:Int) -> [Int] {
 
 }
 
-// Solution 
+// Solution 1
 func digitize(_ num:Int) -> [Int] {
     let number = String(num)
     var result = number.compactMap{ $0.wholeNumberValue }
-    result.reverse()
-    return result
+    return result.reversed()
+}
+
+// Solution 2
+func digitize(_ num:Int) -> [Int] {
+  return String(num).map{ $0.wholeNumberValue! }.reversed()
 }
