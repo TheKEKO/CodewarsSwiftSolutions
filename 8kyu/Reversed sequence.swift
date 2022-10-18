@@ -12,3 +12,8 @@ func reverseSeq(n: Int) -> [Int] {
     return result.reversed()
 }
 reverseSeq(n: 5)
+
+// Solution 2
+func reverseSeq(n: Int) -> [Int] {
+    return (1...n).reversed()
+}
