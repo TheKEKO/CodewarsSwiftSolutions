@@ -9,14 +9,8 @@ func sumOfPositives (_ numbers: [Int] ) -> Int {
 
 // Solution 1
 func sumOfPositives (_ numbers: [Int] ) -> Int {
-    var num = numbers
-    let arrayFilter = num.filter{$0 >= 0}
-    var result = arrayFilter.reduce(0, +)
-    if result > 1 {
-        return(result)
-    } else {
-        return 0
-    }
+    let arrayFilter = numbers.filter{$0 >= 0}
+    return arrayFilter.reduce(0, +)
 }
 
 // Solution 2
