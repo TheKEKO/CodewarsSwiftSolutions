@@ -18,3 +18,14 @@ func sumOfPositives (_ numbers: [Int] ) -> Int {
         return 0
     }
 }
+
+// Solution 2
+func sumOfPositives (_ numbers: [Int] ) -> Int {
+    var total = 0
+    for number in numbers {
+        if   number > 0 {
+        total = total + number
+        }
+    }
+    return total
+}
