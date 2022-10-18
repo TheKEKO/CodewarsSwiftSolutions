@@ -9,7 +9,7 @@ func sumOfPositives (_ numbers: [Int] ) -> Int {
 
 // Solution 1
 func sumOfPositives (_ numbers: [Int] ) -> Int {
-    let arrayFilter = numbers.filter{$0 >= 0}
+    let arrayFilter = numbers.filter{$0 > 0}
     return arrayFilter.reduce(0, +)
 }
 
