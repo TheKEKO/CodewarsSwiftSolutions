@@ -5,3 +5,10 @@
 func reverseSeq(n: Int) -> [Int] {
   return []
 }
+
+// Solution 1
+func reverseSeq(n: Int) -> [Int] {
+    var result = Array(1...n)
+    return result.reversed()
+}
+reverseSeq(n: 5)
