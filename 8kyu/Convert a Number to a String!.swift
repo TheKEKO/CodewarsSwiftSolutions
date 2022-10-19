@@ -9,3 +9,9 @@ func numberToString(number: Int) -> String {
   // TODO Your code goes here!
   return ""
 }
+
+// Solution 
+func numberToString(number: Int) -> String {
+  return String(number)
+}
+
