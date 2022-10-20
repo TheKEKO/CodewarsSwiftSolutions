@@ -9,3 +9,8 @@ Return your answer as a number.
 func sumMix(_ arr: [Any]) -> Int {
 
 }
+
+// Solution 
+func sumMix(_ arr: [Any]) -> Int {
+    return arr.compactMap { Int("\($0)") }.reduce(0, +)
+}
