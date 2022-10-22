@@ -6,3 +6,17 @@ func repeatStr(_ n: Int, _ string: String) -> String {
   // Code here:
   return ""
 }
+
+// Solution 1
+func repeatStr(_ n: Int, _ string: String) -> String {
+    var result = ""
+    for _ in 0..<n {
+        result += "\(string)"
+    }
+    return result
+}
+
+// Solution 2
+func repeatStr(_ n: Int, _ string: String) -> String {
+  return String(repeating: string, count: n)
+}
