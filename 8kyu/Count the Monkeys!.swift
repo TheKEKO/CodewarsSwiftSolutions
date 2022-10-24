@@ -9,3 +9,8 @@ As a good parent, you will sit and count with him. Given the number (n), populat
 func monkeyCount(_ n: Int) -> [Int] {
 
 }
+
+// Solution
+func monkeyCount(_ n: Int) -> [Int] {
+    Array(1...n)
+}
