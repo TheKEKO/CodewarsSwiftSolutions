@@ -5,3 +5,8 @@
 func squareSum(_ vals: [Int]) -> Int {
   
 }
+
+// Solution
+func squareSum(_ vals: [Int]) -> Int {
+    vals.map({ $0 * $0 }).reduce(0, +)
+}
