@@ -27,3 +27,8 @@ func hero(bullets: Int, dragons: Int) -> Bool {
 func hero(bullets: Int, dragons: Int) -> Bool {
     return bullets >= dragons * 2 ? true : false
 }
+
+// Solution 3
+func hero(bullets: Int, dragons: Int) -> Bool {
+    return bullets >= dragons * 2
+}
