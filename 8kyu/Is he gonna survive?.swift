@@ -13,3 +13,12 @@ Return True if yes, False otherwise :)
 func hero(bullets: Int, dragons: Int) -> Bool {
   false
 }
+
+// Solution 1
+func hero(bullets: Int, dragons: Int) -> Bool {
+    if bullets >= dragon * 2 {
+        return true
+    } else {
+        return false
+    }
+}
