@@ -11,3 +11,18 @@ func fakeBin(digits: String) -> String {
   //your code here
   return digits
 }
+
+// Solution 1
+func fakeBin(digits: String) -> String {
+    var result = ""
+    for i in digits {
+        if i >= "5" {
+            result += "1"
+        }
+        if i < "5" {
+            result += "0"
+        }
+    }
+    return result
+    
+}
