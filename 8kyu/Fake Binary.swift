@@ -26,3 +26,8 @@ func fakeBin(digits: String) -> String {
     return result
     
 }
+
+// Solution 2
+func fakeBin(digits: String) -> String {
+    return String(digits.map { Int(String($0))! >= 5 ?  "1" : "0" })
+}
