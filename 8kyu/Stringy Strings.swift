@@ -12,3 +12,16 @@ The size will always be positive and will only use whole numbers.
 func stringy(_ size: Int) -> String {
 
 }
+
+// Solution 1
+func stringy(_ size: Int) -> String {
+    var result = ""
+    for i: Int in 1...size {
+        if i % 2 == 0 {
+            result += "0"
+        } else {
+            result += "1"
+        }
+    }
+    return result
+}
