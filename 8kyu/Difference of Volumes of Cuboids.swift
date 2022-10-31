@@ -18,3 +18,8 @@ func findDifference(_ a: [Int], _ b: [Int]) -> Int {
   //  Your code here!
   return -1
 }
+
+// Solution
+func findDifference(_ a: [Int], _ b: [Int]) -> Int {
+    abs(a.reduce(1, *) - b.reduce(1, *))
+}
