@@ -11,3 +11,8 @@ The array will never be empty.
 func getAverage(_ marks: [Int]) -> Int { 
   return 0 //TODO : calculate the downwar rounded average of the marks array
 }
+
+// Solution 
+func getAverage(_ marks: [Int]) -> Int {
+    marks.reduce(0, +) / marks.count
+}
