@@ -14,3 +14,8 @@ to your function although you will need to account for adding trailing zeros if 
 
 func formatMoney(_ val:Double) -> String {
 }
+
+// Solution 
+func formatMoney(_ val:Double) -> String {
+    String(format: "$%.2f", val)
+}
