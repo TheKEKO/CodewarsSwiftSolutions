@@ -7,3 +7,7 @@ Return the average of the given array rounded down to its nearest integer.
 
 The array will never be empty.
 */
+
+func getAverage(_ marks: [Int]) -> Int { 
+  return 0 //TODO : calculate the downwar rounded average of the marks array
+}
