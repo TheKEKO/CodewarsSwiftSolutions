@@ -12,7 +12,16 @@ func getAverage(_ marks: [Int]) -> Int {
   return 0 //TODO : calculate the downwar rounded average of the marks array
 }
 
-// Solution 
+// Solution 1
 func getAverage(_ marks: [Int]) -> Int {
     marks.reduce(0, +) / marks.count
+}
+
+// Solution 2
+func getAverage(_ marks: [Int]) -> Int {
+    var result = 0
+    for i in marks {
+        result += i
+    }
+    return result / marks.count
 }
