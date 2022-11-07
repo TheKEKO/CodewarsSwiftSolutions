@@ -14,7 +14,7 @@ func bmi(_ weight: Int, _ height: Double) -> String {
     # your code
 }
 
-/ Solution 1
+// Solution 1
 func bmi(_ weight: Int, _ height: Double) -> String {
     let result = Double(weight) / (height * height)
     
@@ -27,4 +27,14 @@ func bmi(_ weight: Int, _ height: Double) -> String {
     } else {
         return "Obese"
     }
+}
+
+/ Solution 2
+func bmi(_ weight: Int, _ height: Double) -> String {
+    let result = Double(weight) / (height * height)
+    
+    if result <= 18.5 {return "Underweight"}
+    if result <= 25.0 {return "Normal"}
+    if result <= 30.0 {return "Overweight"}
+    return "Obese"
 }
