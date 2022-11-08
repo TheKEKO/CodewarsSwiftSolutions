@@ -24,3 +24,8 @@ func take(_ arr: [Int], _ n: Int) -> [Int] {
         return arr
     }
 }
+
+// Solution 3
+func take(_ arr: [Int], _ n: Int) -> [Int] {
+    return arr == [] || n > arr.count ? arr : Array(arr[0..<n])
+}
