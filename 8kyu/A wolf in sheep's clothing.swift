@@ -15,3 +15,13 @@ func take(_ arr: [Int], _ n: Int) -> [Int] {
 func take(_ arr: [Int], _ n: Int) -> [Int] {
     return Array(arr.prefix(n))
 }
+
+// Solution 2
+func take(_ arr: [Int], _ n: Int) -> [Int] {
+    if arr.count >= n {
+        let result = Array(arr[0..<n])
+        return result
+    } else {
+        return arr
+    }
+}
