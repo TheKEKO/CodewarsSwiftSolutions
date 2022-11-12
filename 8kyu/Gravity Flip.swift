@@ -12,3 +12,16 @@ func flip(_ direction: String, _ a: [Int]) -> [Int] {
   // Do some magic
   return []
 }
+
+// Solution 1
+func flip(_ direction: String, _ a: [Int]) -> [Int] {
+   let sort = a
+    if direction == "R" {
+        let sort = a.sorted()
+        return sort
+    } else {
+        direction == "L"
+       let sort = a.sorted(by: >)
+        return sort
+    }
+}
