@@ -27,7 +27,7 @@ func flip(_ direction: String, _ a: [Int]) -> [Int] {
 }
 
 // Solution 2
-func flip1(_ direction: String, _ a: [Int]) -> [Int] {
+func flip(_ direction: String, _ a: [Int]) -> [Int] {
   return a.sorted(by: direction == "L" ? (>) : (<))
 }
 
