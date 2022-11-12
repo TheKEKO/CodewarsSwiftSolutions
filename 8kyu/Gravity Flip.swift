@@ -30,3 +30,13 @@ func flip(_ direction: String, _ a: [Int]) -> [Int] {
 func flip1(_ direction: String, _ a: [Int]) -> [Int] {
   return a.sorted(by: direction == "L" ? (>) : (<))
 }
+
+// Solution 3
+func flip(_ direction: String, _ a: [Int]) -> [Int] {
+  if direction == "R" {
+    return a.sorted()
+  }
+  else {
+    return a.sorted { $0 > $1 }
+  }
+}
