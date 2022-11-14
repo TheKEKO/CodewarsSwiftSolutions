@@ -10,3 +10,7 @@ Sum all the digits of n.
 Subtract the sum from n, and it is your new n.
 If the new n is in the list below return the associated fruit, otherwise return back to task 1.
 */
+
+func subtractSum(_ n: Int) -> String {
+    return "" // fruit name like "apple"
+}
