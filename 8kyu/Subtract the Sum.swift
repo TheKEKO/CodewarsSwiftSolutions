@@ -14,3 +14,8 @@ If the new n is in the list below return the associated fruit, otherwise return 
 func subtractSum(_ n: Int) -> String {
     return "" // fruit name like "apple"
 }
+
+// Solution
+func subtractSum(_ n: Int) -> String {
+  "apple"
+}
