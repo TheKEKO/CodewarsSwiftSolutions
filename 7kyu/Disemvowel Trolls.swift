@@ -13,3 +13,8 @@ Note: for this kata y isn't considered a vowel.
 func disemvowel(_ s: String) -> String {
 
 }
+
+// Solution 1
+func disemvowel(_ s: String) -> String {
+    return s.replacingOccurrences(of: "[aeiou]", with: "", options: [.regularExpression, .caseInsensitive])
+}
