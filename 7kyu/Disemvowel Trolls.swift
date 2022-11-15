@@ -18,3 +18,10 @@ func disemvowel(_ s: String) -> String {
 func disemvowel(_ s: String) -> String {
     return s.replacingOccurrences(of: "[aeiou]", with: "", options: [.regularExpression, .caseInsensitive])
 }
+
+// Solution 2
+func disemvowel(_ s: String) -> String {
+  let vowels: [Character] = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"]
+  
+  return String(s.characters.filter { !vowels.contains($0) })
+}
