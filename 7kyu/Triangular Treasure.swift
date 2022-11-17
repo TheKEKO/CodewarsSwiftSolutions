@@ -18,4 +18,8 @@ For example: (Input --> Output)
 -10 --> 0
 */
 
+func triangular(_ n: Int) -> Int{
+
+}
+
 
