@@ -15,3 +15,12 @@ Input: 123456789 Output: 987654321
 func descendingOrder(of number: Int) -> Int {
 
 }
+
+// Solution 1
+func descendingOrder(of number: Int) -> Int {
+    let convertString = String(number)
+    let createArray = convertString.compactMap { Int(String($0)) }
+    let sortedArray = createArray.sorted(by: >)
+    let convertArray = sortedArray.map { $0.description }
+    return Int(convertArray.joined()) ?? 0
+}
