@@ -28,3 +28,8 @@ func triangular(_ n: Int) -> Int{
     return n * (1 + n) / 2
 }
 
+// Solution 2
+func triangular(_ n: Int) -> Int{
+    n < 0 ? 0 : n * (1 + n) / 2
+}
+
