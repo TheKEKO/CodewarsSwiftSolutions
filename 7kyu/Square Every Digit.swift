@@ -14,7 +14,7 @@ func squareDigits(_ num: Int) -> Int {
 // Solution 1
 func squareDigits(_ num: Int) -> Int {
     let convertString = String(num)
-    let createArray = convertString.compactMap{ Int(String($0)) }
+    let createArray = convertString.compactMap { Int(String($0)) }
     let sumArray = createArray.compactMap { String($0 * $0) }
     return Int(sumArray.joined()) ?? 0
 }
