@@ -24,3 +24,12 @@ func descendingOrder(of number: Int) -> Int {
     let convertArray = sortedArray.map { $0.description }
     return Int(convertArray.joined()) ?? 0
 }
+
+// Solution 2
+func descendingOrder(of number: Int) -> Int {
+    return Int(String(number)
+        .compactMap { Int(String($0)) }
+        .sorted(by: >)
+        .map { $0.description }
+        .joined()) ?? 0
+}
