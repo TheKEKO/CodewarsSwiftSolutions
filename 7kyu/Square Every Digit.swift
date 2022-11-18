@@ -18,3 +18,8 @@ func squareDigits(_ num: Int) -> Int {
     let sumArray = createArray.compactMap { String($0 * $0) }
     return Int(sumArray.joined()) ?? 0
 }
+
+// Solution 2
+func squareDigits(_ num: Int) -> Int {
+  return Int(String(num).compactMap { Int(String($0)) }.compactMap { String($0 * $0) }.joined()) ?? 0
+}
