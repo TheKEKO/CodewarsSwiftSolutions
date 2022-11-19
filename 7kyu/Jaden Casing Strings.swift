@@ -38,10 +38,7 @@ extension String {
 extension String {
     func toJadenCase() -> String {
         return components(separatedBy: " ")
-            .map { $0
-                .prefix(1)
-                .uppercased() + $0
-                .dropFirst() }
+            .map { $0.prefix(1).uppercased() + $0.dropFirst() }
             .joined(separator: " ")
     }
 }
