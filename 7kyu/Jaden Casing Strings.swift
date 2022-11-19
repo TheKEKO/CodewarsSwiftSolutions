@@ -19,3 +19,10 @@ extension String {
     func toJadenCase() -> String {
     }
 }
+
+// Solution 1
+extension String {
+    func toJadenCase() -> String {
+        return capitalized
+    }
+}
