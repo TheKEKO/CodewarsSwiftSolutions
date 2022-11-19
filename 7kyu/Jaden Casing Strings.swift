@@ -26,3 +26,10 @@ extension String {
         return capitalized
     }
 }
+
+// Solution 2
+extension String {
+    func toJadenCase() -> String {
+      return components(separatedBy: " ").map{ String($0.capitalized) }.joined(separator: " ")
+    }
+}
