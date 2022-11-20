@@ -11,3 +11,17 @@ of a day. We want to know when the height of the plant will reach a certain leve
 func growingPlant(_ upSpeed: Int, _ downSpeed: Int, _ desiredHeight: Int) -> Int {
     // your code here
 }
+
+// Solution
+ffunc growingPlant(_ upSpeed: Int, _ downSpeed: Int, _ desiredHeight: Int) -> Int {
+    var height = upSpeed
+    var numberOfDays = 1
+    
+    while height < desiredHeight {
+        height -= downSpeed
+        height += upSpeed
+        numberOfDays += 1
+    }
+    
+    return numberOfDays
+}
