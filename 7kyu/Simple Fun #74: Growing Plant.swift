@@ -7,3 +7,7 @@ Each day a plant is growing by upSpeed meters. Each night that plant's height de
 meters due to the lack of sun heat. Initially, plant is 0 meters tall. We plant the seed at the beginning 
 of a day. We want to know when the height of the plant will reach a certain level.
 */
+
+func growingPlant(_ upSpeed: Int, _ downSpeed: Int, _ desiredHeight: Int) -> Int {
+    // your code here
+}
