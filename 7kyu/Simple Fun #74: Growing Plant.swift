@@ -12,7 +12,24 @@ func growingPlant(_ upSpeed: Int, _ downSpeed: Int, _ desiredHeight: Int) -> Int
     // your code here
 }
 
-// Solution
+// Solution 1
+func growingPlant(_ upSpeed: Int, _ downSpeed: Int, _ desiredHeight: Int) -> Int {
+    var distance = 0
+    var numberOfDays = 0
+    
+    while distance < desiredHeight {
+        distance += upSpeed
+        numberOfDays += 1
+        
+        if distance < desiredHeight {
+            distance -= downSpeed
+        }
+    }
+    
+    return numberOfDays
+}
+
+// Solution 2
 ffunc growingPlant(_ upSpeed: Int, _ downSpeed: Int, _ desiredHeight: Int) -> Int {
     var height = upSpeed
     var numberOfDays = 1
