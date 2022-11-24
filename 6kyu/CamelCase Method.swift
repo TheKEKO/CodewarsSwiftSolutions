@@ -10,7 +10,12 @@ func camelCase(_ str: String) -> String {
 
 }
 
-// Solution
+// Solution 1
 func camelCase(_ str: String) -> String {
     str.capitalized.components(separatedBy: " ").joined()
+}
+
+// Solution 2
+func camelCase(_ str: String) -> String {
+    str.replacingOccurrences(of: " ", with: "")
 }
