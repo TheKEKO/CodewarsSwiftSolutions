@@ -31,12 +31,12 @@ func growingPlant(_ upSpeed: Int, _ downSpeed: Int, _ desiredHeight: Int) -> Int
 
 // Solution 2
 ffunc growingPlant(_ upSpeed: Int, _ downSpeed: Int, _ desiredHeight: Int) -> Int {
-    var height = upSpeed
+    var distance = upSpeed
     var numberOfDays = 1
     
-    while height < desiredHeight {
-        height -= downSpeed
-        height += upSpeed
+    while distance < desiredHeight {
+        distance -= downSpeed
+        distance += upSpeed
         numberOfDays += 1
     }
     
