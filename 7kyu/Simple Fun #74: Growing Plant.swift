@@ -34,7 +34,7 @@ ffunc growingPlant(_ upSpeed: Int, _ downSpeed: Int, _ desiredHeight: Int) -> In
     var distance = upSpeed
     var numberOfDays = 1
     
-    while distance < desiredHeight {
+    while distance < desiredDistance {
         distance -= downSpeed
         distance += upSpeed
         numberOfDays += 1
