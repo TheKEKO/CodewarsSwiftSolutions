@@ -15,3 +15,8 @@ Given the triangle of consecutive odd numbers:
 func rowSumOddNumbers(_ row: Int) -> Int {
 
 }
+
+// Solution 1
+func rowSumOddNumbers(_ row: Int) -> Int {
+    row * row * row
+}
