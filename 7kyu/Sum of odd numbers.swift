@@ -20,3 +20,6 @@ func rowSumOddNumbers(_ row: Int) -> Int {
 func rowSumOddNumbers(_ row: Int) -> Int {
     row * row * row
 }
+
+// Solution 2
+let rowSumOddNumbers: (Int) -> Int = { $0 * $0 * $0 }
