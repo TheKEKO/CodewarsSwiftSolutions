@@ -6,3 +6,8 @@
 func angle(_ n: Int) -> Int {
     // your code here
 }
+
+// Solution
+func angle(_ n: Int) -> Int {
+    (n - 2) * 180
+}
