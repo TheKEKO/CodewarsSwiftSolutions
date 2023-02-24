@@ -9,7 +9,7 @@ func sumOfIntegersInString(_ string: String) -> Int {
     return 0
 }
 
-// Solution 
+// Solution 1
 func sumOfIntegersInString(_ string: String) -> Int {
     var result = 0
     var number = "0"
@@ -26,4 +26,11 @@ func sumOfIntegersInString(_ string: String) -> Int {
         }
     }
     return result
+}
+
+// Solution 2
+func sumOfIntegersInString(_ string: String) -> Int {
+    string.components(separatedBy: CharacterSet.decimalDigits.inverted)
+        .compactMap {Int("\($0)")}
+        .reduce(0, +)
 }
