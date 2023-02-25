@@ -7,4 +7,17 @@ func inArray(_ a1: [String], _ a2: [String]) -> [String] {
     // your code
 }
 
-
+// Solution 1
+func inArray(_ a1: [String], _ a2: [String]) -> [String] {
+    var r = [String]()
+    
+    for a in a2 {
+        for b in a1 {
+            if a.contains(b) && !r.contains(b) {
+                r.append(b)
+            }
+        }
+    }
+    
+    return r.sorted()
+}
