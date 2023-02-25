@@ -21,3 +21,8 @@ func inArray(_ a1: [String], _ a2: [String]) -> [String] {
     
     return r.sorted()
 }
+
+// Solution 2
+func inArray(_ a1: [String], _ a2: [String]) -> [String] {
+    Set(a1.filter {a in a2.contains {$0.contains(a)}}).sorted()
+}
