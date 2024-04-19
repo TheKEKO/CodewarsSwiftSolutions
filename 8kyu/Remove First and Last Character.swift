@@ -6,3 +6,9 @@ func removeFirstAndLast(_ str: String) -> String {
 }
 
 // Solution 2
+func removeFirstAndLast(_ str: String) -> String {
+    var myStr = str;
+    myStr.removeFirst()
+    myStr.removeLast()
+    return myStr;
+}
